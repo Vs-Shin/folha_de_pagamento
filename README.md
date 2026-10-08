@@ -105,7 +105,6 @@ graph LR
         UC3[UC03 - Atualizar Servidor]
         UC4[UC04 - Excluir Servidor]
         UC5[UC05 - Emitir Holerite]
-        UC6[UC06 - Sair / Retornar ao Menu]
         UC_Calc[Calcular Folha - Triênio, INSS, IRRF]
     end
 
@@ -114,13 +113,7 @@ graph LR
     Operador --> UC3
     Operador --> UC4
     Operador --> UC5
-    Operador --> UC6
 
-    UC1 -.->|retorna a| UC6
-    UC2 -.->|retorna a| UC6
-    UC3 -.->|retorna a| UC6
-    UC4 -.->|retorna a| UC6
-    UC5 -.->|retorna a| UC6
     UC5 -.->|include| UC_Calc
 ```
 
