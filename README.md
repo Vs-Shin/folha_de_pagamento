@@ -92,8 +92,8 @@ Testes manuais das 5 opções do menu para verificar o correto funcionamento das
 
 ## 📐 Diagramas de Arquitetura
 
-### 1. Diagrama de Casos de Uso
-Representa as interações do operador de RH com os casos de uso do sistema.
+### 1. Diagrama de Casos de uso
+Representa as interações do operador com os casos de uso do sistema.
 
 ```mermaid
 graph LR
@@ -115,6 +115,30 @@ graph LR
     Operador --> UC5
 
     UC5 -.->|include| UC_Calc
+```
+
+### 2. Diagrama de Sequência
+Demonstra a comunicação em camadas durante a emissão do holerite (Opção 2 do menu).
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User as Operador / Usuário
+    participant CLI as Apresentação (main.py)
+    participant DB as Banco de Dados (banco.py)
+    participant Negocio as Regras de Negócio (negocio.py)
+
+    User->>CLI: Seleciona Opção 2 (Gerar Holerite)
+    CLI->>User: Solicita ID do Servidor
+    User->>CLI: Informa ID (ex: 1)
+    
+    CLI->>DB: buscar_servidor_por_id(1)
+    DB-->>CLI: Retorna dados do servidor [ID, Nome, Cargo, Salário, Anos]
+    
+    CLI->>Negocio: calcular_folha(salario_base, anos_servico)
+    Negocio-->>CLI: Retorna impostos e Salário Líquido
+    
+    CLI->>User: Exibe Holerite Formatado
 ```
 
 
