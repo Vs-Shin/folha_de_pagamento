@@ -90,7 +90,7 @@ Integração das chamadas em main.py no loop do menu interativo.
 
 Testes manuais das 5 opções do menu para verificar o correto funcionamento das funções e atualização do banco.
 
-## 📐 Diagramas de Arquitetura
+## 📐 Diagramas e UI
 
 ### 1. Diagrama de Casos de uso
 Representa as interações do operador com os casos de uso do sistema.
@@ -141,6 +141,8 @@ sequenceDiagram
     CLI->>User: Exibe Holerite Formatado
 ```
 
+### UI:
+https://www.figma.com/make/LF3bfbxL16onv2Z7eCMKaj/Sistema-de-Registro-de-Funcion%C3%A1rios?t=ESJnEbhHwRYok2Ri-20&fullscreen=1
 
 ## 🛠️ Tecnologias Utilizadas
 
