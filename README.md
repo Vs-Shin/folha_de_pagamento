@@ -143,7 +143,7 @@ sequenceDiagram
     CLI->>User: Exibe Holerite Formatado
 ```
 
-### UI:
+### Protótipo para UI:
 https://www.figma.com/make/LF3bfbxL16onv2Z7eCMKaj/Sistema-de-Registro-de-Funcion%C3%A1rios?t=ESJnEbhHwRYok2Ri-20&fullscreen=1
 
 ## 🛠️ Tecnologias Utilizadas
