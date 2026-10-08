@@ -63,7 +63,9 @@ Arquitetura do Sistema:
 
 - Camada de Apresentação (main.py): Menu interativo e captura de entradas do usuário via terminal.
 
-Modelagem do Banco de Dados :
+
+
+**Modelagem do Banco de Dados**:
 
 id:
 
@@ -186,4 +188,4 @@ Objetivo: Tornar as regras do sistema mais próximas da realidade.
 
 Objetivo: Levar a aplicação para fora do terminal.
 
-- [ ] Ou Web Inicial (Flask): Transformar o menu CLI em uma página web simples em HTML com rotas em Flask.
+- [ ] Plataforma Web Inicial (Flask): Transformar o menu CLI em uma página web simples em HTML com rotas em Flask.
